@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title_background_energy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="BackGround Energy"
+        android:textSize="16sp"
+        android:textColor="#FF0000" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_marginLeft="16dp"
+            >
+
+            <TextView
+                android:id="@+id/label1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtView_energy_param_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="#6960EC"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+             >
+
+            <TextView
+                android:id="@+id/txtView_bg_max_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Max Energy"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtView_bg_max_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="#6960EC"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_marginLeft="16dp"
+            >
+
+            <TextView
+                android:id="@+id/txtView_bg_max_avg_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Max Avg"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtView_bg_max_avg_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="#6960EC"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_speech_energy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Speech Energy"
+        android:textColor="#FF0000" 
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_marginLeft="16dp"
+            >
+
+            <TextView
+                android:id="@+id/label2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtView_energy_param_speech"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="#6960EC"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_marginLeft="16dp"
+            >
+
+            <TextView
+                android:id="@+id/txtView_speech_max_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Max Energy"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtView_speech_max_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="#6960EC"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_marginLeft="16dp"
+            >
+
+            <TextView
+                android:id="@+id/txtView_speech_max_avg_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Max Avg"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtView_speech_max_avg_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="#6960EC"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtView_running_avg_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Running Average Energy (1000ms) "
+            android:textSize="16sp" 
+            android:textColor="#FF0000"/>
+
+        <TextView
+            android:id="@+id/txtView_running_avg_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#6960EC"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

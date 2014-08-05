@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title_background_zc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="BackGround Zero Crossing"
+        android:textSize="16sp"
+        android:textColor="#89C35C" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_marginLeft="16dp"
+            >
+
+            <TextView
+                android:id="@+id/label1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Count"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtView_bg_zcCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="#FF8040"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+             >
+
+            <TextView
+                android:id="@+id/title_bg_zcCountSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CountSum"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtView_bg_zcCountSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="#FF8040"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_marginLeft="16dp"
+            >
+
+            <TextView
+                android:id="@+id/title_bg_max_avg_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ZCFrameSum"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtView_bg_zcCountFrameSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="#FF8040"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_speech_zc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Speech ZeroCrossing"
+        android:textColor="#89C35C" 
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_marginLeft="16dp"
+            >
+
+            <TextView
+                android:id="@+id/label2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ZCCOUNT"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtView_speech_zcCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="#FF8040"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_marginLeft="16dp"
+            >
+
+            <TextView
+                android:id="@+id/title_speech_zcCountSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="zcCountSum"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtView_speech_zcCountSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="#FF8040"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_marginLeft="16dp"
+            >
+
+            <TextView
+                android:id="@+id/title_speech_zcCountFrameSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ZCFrameSum"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtView_speech_zcCountFrameSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="#FF8040"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+  </LinearLayout>

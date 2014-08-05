@@ -1,0 +1,63 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.sv.cmu.datacollectiononline"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.bluetooth.ble"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:icon="@drawable/panda_1"
+        android:label="DataCollectionOnline"
+        android:theme="@style/android:Theme.Light" >
+        <service
+            android:name="ti.android.ble.common.BluetoothLeService"
+            android:enabled="true" />
+
+        <activity
+            android:name="ti.android.ble.sensortag.BLEMainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.sv.cmu.datacollectiononline.MainActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <!--
+        <service android:name="edu.cmu.sv.speechdatacollection.audioplayback.ble.SpeechProcessingService" />
+        <service android:name="edu.cmu.sv.speechdatacollection.audioplayback.ble.VLCService" />
+        <service android:name="edu.cmu.sv.speechdatacollection.audioplayback.ble.AudioService" />
+        -->
+    </application>
+
+</manifest>

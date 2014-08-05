@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:compatNamespace="http://schemas.android.com/apk/res-auto" >
+    
+    <item
+        android:id="@+id/server_ip_settings"
+        android:title="@string/server_ip_string" />
+    <item
+        android:id="@+id/server_port_settings"
+        android:title="@string/server_port_string" />
+<!--    <item
+        android:id="@+id/server_port_settings_cn"
+        android:title="@string/server_port_string_cn" />
+        -->
+    <item 
+       android:id="@+id/autostart_setting"
+       android:title="@string/autostart_string"/>
+    <item
+        android:id="@+id/autostop_settings"
+        android:title="@string/autostop_string" />
+    <item
+        android:id="@+id/punctuation_settings"
+        android:title="@string/punctuation_string" />
+   
+</menu>
