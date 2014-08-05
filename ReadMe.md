@@ -18,27 +18,34 @@ Prerequisites: - Android Version higher than 4.0 - Bluetooth Button (Optional, Y
 Steps:
 
 Step1: Start App
+
 Turn on Bluetooth Button, you will see the scan results for all paired bluetooth devices, the click "Connect" to choose the ble button and starts data collection
 Choose "Skip Scan" if you do not want to use BLE button
 
 Step2: Server Testing
+
 Follow the hint shown on screen, Click button "Click to Connect to Server" to test whether server is available now
 If success, status view will show "Connected To Server" and the button will change to "Click to Start"
 If fail, status bar will show "Unable to Connect to Server" If unable to connect to server, please check the following items: - Your device has stable Internet access - The IP Address and Server Port are correct ( You can change the setting using the Actionbar at the topright corner) - The server is correctly running ( Specified Port is available ) - No other user is connected to the server
 
 Step3: Recording
+
 The recording status bar is showing the status:
-Green Speaker icon with message "Recording..." --> currently recording
-Black Non-Speaking icon with message "Stopped Recording" --> not recording
+
+	Green Speaker icon with message "Recording..." --> currently recording
+	Black Non-Speaking icon with message "Stopped Recording" --> not recording
+
 Button on device screen:
---> Red Button "Click to Start" --> Not recording --> Green Button "Recording" --> Recording
+	--> Red Button "Click to Start" --> Not recording --> Green Button "Recording" --> Recording
+
 BlueTooth Button:
-Left Button: Press Down --> Holding : Recording Release --> End Recording The button on screen and status view will change simultaneously with BLE button actions
-Right Button: Click --> Switch to next Prompt
+	Left Button: Press Down --> Holding : Recording Release --> End Recording The button on screen and status view will change simultaneously with BLE button actions
+	Right Button: Click --> Switch to next Prompt
 You will see Real-time updates the recoginition result of what you speak
 After "end recording", the App is will calculate the accuracy of the recognition - If lower than threshold, You will see the same Prompt and read it again - If correct / higher than threshold / You have already repeated it --> Go to the next Prompt
+
 Putting Together:
- -->Start App --> (Connect BLE Button) 
+	 -->Start App --> (Connect BLE Button) 
          --> Click to connect to Server 
          --> See Prompt that you should read on screen 
          --> Click to Start/ BLE LeftKeyDown --> Read the prompt --> Click button again / BLE LeftKeyUp 
