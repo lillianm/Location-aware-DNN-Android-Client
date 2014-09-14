@@ -1,4 +1,3 @@
-README
 This Repository is the alpha version for Online DataCollection Android App.
 
 DataCollectionOnline is an internal used app to collect audio and context data to train a better DNN model.
@@ -32,24 +31,32 @@ Step3: Recording
 
 The recording status bar is showing the status:
 
-	Green Speaker icon with message "Recording..." --> currently recording
-	Black Non-Speaking icon with message "Stopped Recording" --> not recording
+* Green Speaker icon with message "Recording..." :  currently recording
+* Black Non-Speaking icon with message "Stopped Recording" : not recording
 
 Button on device screen:
-	--> Red Button "Click to Start" --> Not recording --> Green Button "Recording" --> Recording
+* Red Button "Click to Start" : Not recording 
+* Green Button "Recording" > Recording
 
 BlueTooth Button:
-	Left Button: Press Down --> Holding : Recording Release --> End Recording The button on screen and status view will change simultaneously with BLE button actions
-	Right Button: Click --> Switch to next Prompt
+The button on screen and status view will change simultaneously with BLE button actions
+* Left Button: 
+	* Press Down + Hold : Recording 
+	* Release > End Recording
+* Right Button: 
+	* Click: Switch to next Prompt
 You will see Real-time updates the recoginition result of what you speak
 After "end recording", the App is will calculate the accuracy of the recognition - If lower than threshold, You will see the same Prompt and read it again - If correct / higher than threshold / You have already repeated it --> Go to the next Prompt
 
 Putting Together:
-	 -->Start App --> (Connect BLE Button) 
-         --> Click to connect to Server 
-         --> See Prompt that you should read on screen 
-         --> Click to Start/ BLE LeftKeyDown --> Read the prompt --> Click button again / BLE LeftKeyUp 
-         --> Stop recording/ See Results --> Stop App
+	  1. Start App 
+	  2.(optional) Connect BLE Button 
+      3. Click to connect to Server 
+      4. See Prompt that you should read on screen 
+      5. Click to Start/ BLE LeftKeyDown : Read the prompt (All audio data/context sent) 
+      6. Click button again / BLE LeftKeyUp : Stop recording/ See Results (result correction)
+      7. Swipe to see energy bar chartStop App
+      8. Stop App
 
 Installation: You can use Eclipse or other Android Development Tool to install the app Or you can ask me for the signed apk and install it directly.
 After installation, you will see a FAT PANDA looking at you, click him and Have FUN~
