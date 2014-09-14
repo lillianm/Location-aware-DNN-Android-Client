@@ -7,27 +7,27 @@ Layout:
 
 You can swipe between fragments:
 
-Left View is " Status and Prompts", you will see all the real-time updated status for socket connection , recording , the prompt you should read and the response received from the server;
+* Left View is " Status and Prompts", you will see all the real-time updated status for socket connection , recording , the prompt you should read and the response received from the server;
 Right View is a BarChartView calculating the current Energy of your speaking: from left to right: background average energy , average energy during speech, background maximum energy, maximum energy during speech Running Average Energy for previous 1 second.
-Left View you will see a Button, the text and color of the button indicates the current status and the action you might want to take
+* Left View you will see a Button, the text and color of the button indicates the current status and the action you might want to take
 
 How to use the App:
 Prerequisites: - Android Version higher than 4.0 - Bluetooth Button (Optional, You can still use button shown on screen if you do not have a bluetooth button )
 
-Steps:
+*Steps:*
 
-Step1: Start App
+* Step1: Start App
 
 Turn on Bluetooth Button, you will see the scan results for all paired bluetooth devices, the click "Connect" to choose the ble button and starts data collection
 Choose "Skip Scan" if you do not want to use BLE button
 
-Step2: Server Testing
+* Step2: Server Testing
 
 Follow the hint shown on screen, Click button "Click to Connect to Server" to test whether server is available now
 If success, status view will show "Connected To Server" and the button will change to "Click to Start"
 If fail, status bar will show "Unable to Connect to Server" If unable to connect to server, please check the following items: - Your device has stable Internet access - The IP Address and Server Port are correct ( You can change the setting using the Actionbar at the topright corner) - The server is correctly running ( Specified Port is available ) - No other user is connected to the server
 
-Step3: Recording
+* Step3: Recording
 
 The recording status bar is showing the status:
 
@@ -48,7 +48,7 @@ The button on screen and status view will change simultaneously with BLE button 
 You will see Real-time updates the recoginition result of what you speak
 After "end recording", the App is will calculate the accuracy of the recognition - If lower than threshold, You will see the same Prompt and read it again - If correct / higher than threshold / You have already repeated it --> Go to the next Prompt
 
-Putting Together:
+* Putting Together:
 	  1. Start App 
 	  2.(optional) Connect BLE Button 
       3. Click to connect to Server 
@@ -58,7 +58,7 @@ Putting Together:
       7. Swipe to see energy bar chartStop App
       8. Stop App
 
-Installation: You can use Eclipse or other Android Development Tool to install the app Or you can ask me for the signed apk and install it directly.
+* Installation: You can use Eclipse or other Android Development Tool to install the app Or you can ask me for the signed apk and install it directly.
 After installation, you will see a FAT PANDA looking at you, click him and Have FUN~
 
 BTW: it might crash sometimes when you press back to go back to the BLE Activity, I will fix that soon
