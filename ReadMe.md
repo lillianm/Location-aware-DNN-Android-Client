@@ -31,34 +31,34 @@ If fail, status bar will show "Unable to Connect to Server" If unable to connect
 
 The recording status bar is showing the status:
 
-* Green Speaker icon with message "Recording..." :  currently recording
-* Black Non-Speaking icon with message "Stopped Recording" : not recording
+	* Green Speaker icon with message "Recording..." :  currently recording
+	* Black Non-Speaking icon with message "Stopped Recording" : not recording
 
 Button on device screen:
-* Red Button "Click to Start" : Not recording 
-* Green Button "Recording" > Recording
+	* Red Button "Click to Start" : Not recording 
+	* Green Button "Recording" > Recording
 
 BlueTooth Button:
 The button on screen and status view will change simultaneously with BLE button actions
-* Left Button: 
-	* Press Down + Hold : Recording 
-	* Release > End Recording
-* Right Button: 
-	* Click: Switch to next Prompt
+	* Left Button: 
+		* Press Down + Hold : Recording 
+		* Release > End Recording
+	* Right Button: 
+		* Click: Switch to next Prompt
 You will see Real-time updates the recoginition result of what you speak
 After "end recording", the App is will calculate the accuracy of the recognition - If lower than threshold, You will see the same Prompt and read it again - If correct / higher than threshold / You have already repeated it --> Go to the next Prompt
 
-* Putting Together:
-	  1. Start App 
-	  2.(optional) Connect BLE Button 
-      3. Click to connect to Server 
-      4. See Prompt that you should read on screen 
-      5. Click to Start/ BLE LeftKeyDown : Read the prompt (All audio data/context sent) 
-      6. Click button again / BLE LeftKeyUp : Stop recording/ See Results (result correction)
-      7. Swipe to see energy bar chartStop App
-      8. Stop App
+	* Putting Together:
+		  1. Start App 
+		  2.(optional) Connect BLE Button 
+    	  3. Click to connect to Server 
+     	  4. See Prompt that you should read on screen 
+     	  5. Click to Start/ BLE LeftKeyDown : Read the prompt (All audio data/context sent) 
+     	  6. Click button again / BLE LeftKeyUp : Stop recording/ See Results (result correction)
+     	  7. Swipe to see energy bar chartStop App
+     	  8. Stop App
 
-* Installation: You can use Eclipse or other Android Development Tool to install the app Or you can ask me for the signed apk and install it directly.
+Installation: You can use Eclipse or other Android Development Tool to install the app Or you can ask me for the signed apk and install it directly.
 After installation, you will see a FAT PANDA looking at you, click him and Have FUN~
 
 BTW: it might crash sometimes when you press back to go back to the BLE Activity, I will fix that soon
